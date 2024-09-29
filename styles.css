@@ -44,7 +44,7 @@ main {
 .container {
   background-color: var(--white-color);
   max-width: 40rem;
-  margin: 2rem 0;
+  margin: 6rem 0;
   padding: 2em;
   border-radius: 0.8rem;
 }
@@ -74,8 +74,9 @@ h4 {
 
 .prep-title {
   color: #7b284f;
+  font-family: var(--font-outfit);
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 0.5rem;
 }
 
@@ -86,6 +87,7 @@ h4 {
 
 .prep-time {
   background-color: var(--light-rose-color);
+  font-style: var(--font-outfit);
   height: 10rem;
   margin: 1rem 0;
   padding: 1rem 1.5rem;
