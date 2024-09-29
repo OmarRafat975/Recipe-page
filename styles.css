@@ -78,7 +78,7 @@ h4 {
   font-family: var(--font-outfit);
   font-size: 1.2rem;
   font-weight: 400;
-  margin-bottom: 0.5rem;
+  margin-bottom: -0.2rem;
 }
 
 [data-cell="value"] {
