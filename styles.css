@@ -1,0 +1,149 @@
+:root {
+  --white-color: #ffffff;
+  --eggstone-color: #f3e6d8;
+  --gray-color: #e4ded8;
+  --darkgray-color: #5f574e;
+  --darkmoon-color: #302d2c;
+  --brown-color: #854632;
+  --flower-rose-color: #7b284f;
+  --light-rose-color: #fff5fa;
+
+  --font-size-p: 1rem;
+  --font-outfit: "Outfit", sans-serif;
+  --font-young-serif: "Young Serif", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+ul,
+ol {
+  margin-left: 2rem;
+}
+
+body {
+  background-color: var(--eggstone-color);
+  font-family: var(--font-outfit);
+  font-weight: 400;
+  color: var(--darkgray-color);
+}
+
+main {
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  background-color: var(--white-color);
+  max-width: 40rem;
+  margin: 2rem 0;
+  padding: 2em;
+  border-radius: 0.8rem;
+}
+
+.container img {
+  width: 100%;
+  border-radius: 0.6rem;
+}
+
+/***Font ***/
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-young-serif);
+  font-weight: 400;
+  color: var(--brown-color);
+  margin: 1rem 0rem;
+  font-size: 1.75rem;
+}
+
+.container .recipe-container header h1 {
+  color: var(--darkmoon-color);
+  font-size: 2rem;
+}
+
+.prep-title {
+  color: #7b284f;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+[data-cell="value"] {
+  color: var(--brown-color);
+  font-weight: 600;
+}
+
+.prep-time {
+  background-color: var(--light-rose-color);
+  height: 10rem;
+  margin: 1rem 0;
+  padding: 1rem 1.5rem;
+  border-radius: 0.8rem;
+}
+ul li,
+ol li {
+  margin-bottom: 0.8rem;
+  padding-left: 1rem;
+}
+li::marker {
+  color: var(--brown-color);
+  font-weight: 700;
+}
+.prep-time ul li::marker {
+  color: var(--flower-rose-color);
+}
+
+hr {
+  outline: none;
+  border: none;
+  height: 1px;
+  background-color: var(--gray-color);
+  margin-top: 2rem;
+}
+
+tr {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--gray-color);
+}
+
+.no-border {
+  border: none;
+}
+
+footer {
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+  }
+  .container img {
+    border-radius: 0;
+  }
+  .recipe-container {
+    padding: 1rem 2rem;
+  }
+  .container .recipe-container header h1 {
+    font-size: 1.75rem;
+  }
+
+  footer {
+    display: none;
+  }
+}
